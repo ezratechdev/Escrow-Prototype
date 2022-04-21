@@ -18,6 +18,10 @@ const ItemSchema = new mongoose.Schema({
     isSold:{
         type:Boolean,
         required:[true, 'State of item has not been specified'],
+    },
+    price:{
+        type:Number,
+        required:[true , 'Item price was not passed'],
     }
 } , { timestamps: true});
 
